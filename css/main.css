@@ -8,4 +8,59 @@
 body {
   margin: 0;
 }
-/* always include the above */
+
+h1 {
+  color: gold;
+  font-size: 48px;
+  font-family: Cinzel;
+  padding-bottom: 20px;
+  text-align: top;
+  text-shadow: 2.5px 2.5px black;
+}
+
+h2 {
+  color: gold;
+  font-family: Cinzel;
+letter-spacing: 2px;
+max-width: 600px;
+text-align: center;
+text-shadow: 1px 1px black
+}
+
+p {
+  background-color: black
+  color: black;
+  letter-spacing: 1px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 500px;
+  padding: 10px;
+  text-align: center;
+}
+
+#banner {
+  background-image: url("../images/Ivas.jpg");
+  background-size: cover;
+  background-position: center center;
+  padding: 20px;
+  text-align: center;
+}
+
+/* adjusts the margin of the banner to be the correct size despite the padding */
+#banner h1 {
+  margin: 0;
+}
+
+/* this is how we align the text, simply target this with a div */
+.center-content {
+  display: grid;
+  grid-template-columns: [links] 30% [intro] auto [end];
+  margin-left: auto;
+  margin-right: auto; /* spacing between the box and the border of the window */
+  max-width: 600px;
+  width:90%; /* we want this element to take up exactly this much space */
+}
+
+.char-link {
+  text-align: left;
+}
