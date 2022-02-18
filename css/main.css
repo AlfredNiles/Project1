@@ -9,40 +9,46 @@ body {
   margin: 0;
 }
 
+dt {
+  font-family: Cinzel 20px;
+}
+
 h1 {
   color: gold;
-  font-size: 48px;
+  font-size: 60px;
   font-family: Cinzel;
   padding-bottom: 20px;
   text-align: top;
-  text-shadow: 2.5px 2.5px black;
+  text-shadow: 3px 3px black;
 }
 
 h2 {
   color: gold;
   font-family: Cinzel;
-letter-spacing: 2px;
-max-width: 600px;
-text-align: center;
-text-shadow: 1px 1px black
+  letter-spacing: 2px;
+  max-width: 600px;
+  text-align: center;
 }
 
 p {
   background-color: black
   color: black;
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 18px;
   letter-spacing: 1px;
   margin-left: auto;
   margin-right: auto;
-  max-width: 500px;
+  max-width: 700px;
   padding: 10px;
   text-align: center;
 }
 
 #banner {
-  background-image: url("../images/Ivas.jpg");
+  background-image: url("../images/banner.png");
   background-size: cover;
   background-position: center center;
-  padding: 20px;
+  border: 5px ridge #C6A83B;
+  pad: 20px;
   text-align: center;
 }
 
@@ -51,16 +57,53 @@ p {
   margin: 0;
 }
 
+#genericbox {
+  background-color: #AD8854;
+  width: auto;
+  height: auto;
+  border: 5px ridge #C6A83B;
+  padding: 12px;
+  margin: 15px;
+}
+
+/* for body headings */
+#textboxblk {
+  background-image: image("images/pagebg.png");
+  background-size: cover;
+  background-position: center center;
+  background-color: black;
+  width: auto;
+  height: auto;
+  border: 10px ridge #C6A83B;
+  padding: 12px;
+  margin: 15px;
+}
+
+/* this should be the parchment background for main body stuff */
+#bodybox {
+  background-image: url("../images/pagebg.png");
+  background-size: cover;
+  background-position: center center;
+  border: 5px ridge #C6A83B;
+  padding: 12px;
+  margin: 15px;
+  z-index: -1;
+}
+
 /* this is how we align the text, simply target this with a div */
 .center-content {
   display: grid;
-  grid-template-columns: [links] 30% [intro] auto [end];
+  grid-template-columns: [links] 26% [intro] 75% [end];
   margin-left: auto;
   margin-right: auto; /* spacing between the box and the border of the window */
-  max-width: 600px;
+  max-width: 900px;
+  padding-top: 20px;
   width:90%; /* we want this element to take up exactly this much space */
 }
 
 .char-link {
+
   text-align: left;
+  font-family: 'Source Sans 3', sans-serif;
+  padding-left: 0px;
 }
