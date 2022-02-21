@@ -17,9 +17,10 @@ h1 {
   color: gold;
   font-size: 60px;
   font-family: Cinzel;
-  padding-bottom: 20px;
+  padding-bottom: 15px;
+  padding-top: 15px;
   text-align: top;
-  text-shadow: 3px 3px black;
+  text-shadow: 5px 5px black;
 }
 
 h2 {
@@ -28,6 +29,10 @@ h2 {
   letter-spacing: 2px;
   max-width: 600px;
   text-align: center;
+}
+
+h3 {
+  font-family: Cinzel;
 }
 
 p {
@@ -39,7 +44,7 @@ p {
   margin-left: auto;
   margin-right: auto;
   max-width: 700px;
-  padding: 10px;
+  padding: 5px;
   text-align: center;
 }
 
@@ -57,25 +62,18 @@ p {
   margin: 0;
 }
 
+#pbody {
+  text-align: left;
+  line-height: 115%;
+
+}
+
 #genericbox {
   background-color: #AD8854;
   width: auto;
   height: auto;
-  border: 5px ridge #C6A83B;
-  padding: 12px;
-  margin: 15px;
-}
-
-/* for body headings */
-#textboxblk {
-  background-image: image("images/pagebg.png");
-  background-size: cover;
-  background-position: center center;
-  background-color: black;
-  width: auto;
-  height: auto;
-  border: 10px ridge #C6A83B;
-  padding: 12px;
+  border: 7px ridge #C6A83B;
+  padding: 9px;
   margin: 15px;
 }
 
@@ -90,10 +88,25 @@ p {
   z-index: -1;
 }
 
+/* for body headings */
+#textboxblk {
+  background-image: image("images/pagebg.png");
+  background-size: cover;
+  background-position: center center;
+  background-color: black;
+  border: 10px ridge #C6A83B;
+  width: auto;
+  height: auto;
+  padding: 12px;
+  margin: 10px;
+  text-align: center;
+
+}
+
 /* this is how we align the text, simply target this with a div */
 .center-content {
   display: grid;
-  grid-template-columns: [links] 26% [intro] 75% [end];
+  grid-template-columns: [links] 26% [intro] 80% [end];
   margin-left: auto;
   margin-right: auto; /* spacing between the box and the border of the window */
   max-width: 900px;
@@ -102,8 +115,14 @@ p {
 }
 
 .char-link {
-
   text-align: left;
   font-family: 'Source Sans 3', sans-serif;
-  padding-left: 0px;
+}
+
+.thumb {
+  border: 7px ridge #C6A83B;
+  float: left;
+  height: 300px;
+  margin-right: 20px;
+  width: auto;
 }
