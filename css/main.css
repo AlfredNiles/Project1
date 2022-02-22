@@ -33,6 +33,7 @@ h2 {
 
 h3 {
   font-family: Cinzel;
+  font-size: 22px;
 }
 
 p {
@@ -90,9 +91,6 @@ p {
 
 /* for body headings */
 #textboxblk {
-  background-image: image("images/pagebg.png");
-  background-size: cover;
-  background-position: center center;
   background-color: black;
   border: 10px ridge #C6A83B;
   width: auto;
