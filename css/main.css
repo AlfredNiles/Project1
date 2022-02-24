@@ -54,8 +54,10 @@ p {
   background-size: cover;
   background-position: center center;
   border: 5px ridge #C6A83B;
-  pad: 20px;
+  display: block;
+  padding: 20px;
   text-align: center;
+  text-decoration: none;
 }
 
 /* adjusts the margin of the banner to be the correct size despite the padding */
@@ -83,10 +85,9 @@ p {
   background-image: url("../images/pagebg.png");
   background-size: cover;
   background-position: center center;
-  border: 5px ridge #C6A83B;
+  border: 7px ridge #C6A83B;
   padding: 12px;
   margin: 15px;
-  z-index: -1;
 }
 
 /* for body headings */
@@ -104,7 +105,7 @@ p {
 /* this is how we align the text, simply target this with a div */
 .center-content {
   display: grid;
-  grid-template-columns: [links] 26% [intro] 80% [end];
+  grid-template-columns: [links] 26% [intro] 74% [end];
   margin-left: auto;
   margin-right: auto; /* spacing between the box and the border of the window */
   max-width: 900px;
@@ -117,10 +118,25 @@ p {
   font-family: 'Source Sans 3', sans-serif;
 }
 
+.expanded {
+ display: block;
+ margin-left: auto;
+ margin-right: auto;
+ margin-top: 20px;
+ margin-bottom: 20px;
+ width: 50%;
+}
+
 .thumb {
   border: 7px ridge #C6A83B;
+  display: block;
   float: left;
-  height: 300px;
+  height: auto;
   margin-right: 20px;
-  width: auto;
+  width: 240px;
+}
+
+.thumb img {
+  display: block;
+  width: 100%;
 }
