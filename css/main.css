@@ -6,11 +6,13 @@
 }
 
 body {
+  background-color: #5B0F00;
   margin: 0;
 }
 
 dt {
-  font-family: Cinzel 20px;
+  font-family: Cinzel, serif;
+  font-size: 20px;
 }
 
 h1 {
@@ -20,19 +22,20 @@ h1 {
   padding-bottom: 15px;
   padding-top: 15px;
   text-align: top;
-  text-shadow: 5px 5px black;
+  /* https://developer.mozilla.org/en-US/docs/Web/CSS/text-shadow */
+  text-shadow: 4px 4px 2px rgba(0,0,0,0.5);
 }
 
 h2 {
   color: gold;
-  font-family: Cinzel;
+  font-family: Cinzel, serif;
   letter-spacing: 2px;
   max-width: 600px;
   text-align: center;
 }
 
 h3 {
-  font-family: Cinzel;
+  font-family: Cinzel, serif;
   font-size: 22px;
 }
 
@@ -51,6 +54,8 @@ p {
 
 #banner {
   background-image: url("../images/banner.png");
+  background-color: darkgrey;
+  background-blend-mode: multiply;
   background-size: cover;
   background-position: center center;
   border: 5px ridge #C6A83B;
@@ -91,6 +96,18 @@ p {
   margin: 15px;
 }
 
+/* #"character" is applied to the body heading of the html to signify that this page will be subject to id tags relating to the specific character's page */
+
+/* this changes the background of Ivas's body to be the purply magic stuff */
+#ivas #bodybox {
+  background-image: url("../images/ivasbg.png");
+}
+
+/* this modifies the quote to be thistle */
+#ivas h2 {
+  color: thistle;
+}
+
 /* for body headings */
 #textboxblk {
   background-color: black;
@@ -119,6 +136,22 @@ p {
   font-family: 'Source Sans 3', sans-serif;
 }
 
+.char-link ul {
+  list-style-type: none;
+}
+
+.char-link a {
+  color: gold;
+}
+
+.char-link a:visited {
+  color: brown;
+}
+
+.char-link a:hover {
+  color: white;
+}
+
 .expanded {
  display: block;
  margin-left: auto;
@@ -140,4 +173,8 @@ p {
 .thumb img {
   display: block;
   width: 100%;
+}
+
+.intro p:last-child {
+  padding-bottom: 10px;
 }
